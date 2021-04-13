@@ -8,7 +8,7 @@ module.exports = {
 	collectCoverageFrom: [
 		"v*/api/**/*.service.ts",
 		"v*/api/**/service/**/*.ts",
-		"v*/api/**/service/**/**/*.ts",
+		"!v*/api/**/service/**/*.schema.ts",
 	],
 	setupFiles: ["./v1/tests/setup.ts"],
 	coverageDirectory: "../coverage",
