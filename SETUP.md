@@ -12,6 +12,7 @@
 
 ## Initial config
 
+- [ ] Run `yarn husky:config` to automatically config husky
 - [ ] Change the project name on `package.json`
 - [ ] Change the name of the project on `docker-compose.yml` (5 places)
 - [ ] Change the name of the project in the "docker:clear" script on `package.json`
