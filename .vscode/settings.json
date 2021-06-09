@@ -1,4 +1,6 @@
 {
+	// ================== Editor General Config =====================
+
 	// Define Tab Size = 2 Spaces (Half of the Default Size)
 	"editor.tabSize": 2,
 
@@ -23,13 +25,28 @@
 
 	// Make VSCode understand this files as files of this languages
 	"files.associations": {
-    ".prettierignore": "ignore",
-    ".lintstagedrc": "json",
-    ".env.*": "env"
-  },
-  "material-icon-theme.languages.associations": {
-    "env": "tune"
-  },
+		".prettierignore": "ignore",
+		".lintstagedrc": "json",
+		".env.*": "env"
+	},
+	"material-icon-theme.languages.associations": {
+		"env": "tune"
+	},
+
+	// ======================= Formatters ===========================
+
+	"[javascript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
 
 	// ================ Languages General Config ====================
 

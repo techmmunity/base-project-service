@@ -20,5 +20,5 @@
 		"incremental": true,
 		"baseUrl": "src"
 	},
-	"include": ["src/**/*.ts"]
+	"include": ["src/**/*.ts", "jest.config.js"]
 }
