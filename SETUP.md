@@ -1,11 +1,11 @@
 # Setup Project Details
 
-## Enviroment config
+## Environment config
 
 - [Install yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable)
 - [Install docker](https://docs.docker.com/engine/install/)
 - [Install docker-compose](https://docs.docker.com/compose/install/)
-- [Do post-instalation docker steps](https://docs.docker.com/engine/install/linux-postinstall/)
+- [Do post-installation docker steps](https://docs.docker.com/engine/install/linux-postinstall/)
 - [Install VSCode](https://code.visualstudio.com/Download)
 - Install **ALL** the extensions recommended in `.vscode/extensions.json`
 - **If the changes are not applied automatically** add the content of `.vscode/settings.json` in your personal settings.json

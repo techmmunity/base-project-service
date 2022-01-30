@@ -3,12 +3,9 @@
 declare global {
 	namespace NodeJS {
 		interface ProcessEnv {
-			NODE_ENV: "dev" | "homolog" | "production" | "test";
+			NODE_ENV: "dev" | "local" | "production" | "test";
 			PORT: string;
-			POSTGRES_USER: string;
-			POSTGRES_PASSWORD: string;
-			POSTGRES_HOST: string;
-			POSTGRES_DATABSE: string;
+			DATABASE_URL: string;
 		}
 	}
 }

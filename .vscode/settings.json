@@ -1,11 +1,24 @@
 {
 	// ================== Editor General Config =====================
 
+	// Defines Prettier as Default Formatter
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+	// Add a vertical line on the 80 characters limit
+	"editor.rulers": [80],
+
 	// Define Tab Size = 2 Spaces (Half of the Default Size)
 	"editor.tabSize": 2,
 
 	// Disable Tab To Space Conversion
 	"editor.insertSpaces": false,
+
+	// Disable Identation Detection,
+	// Because All The Indentations MUST BE
+	// Tabs With 2 Spaces (ﾉ °益°)ﾉ 彡 ┻━┻
+	// Setted to true because some
+	// OS projects use 4 spaces ou 2 tabs, etc
+	"editor.detectIndentation": true,
 
 	// Config Default End Of Line Formatting
 	"files.eol": "\n",
@@ -18,6 +31,9 @@
 		"source.fixAll.eslint": true
 	},
 
+	// Icons
+	"workbench.iconTheme": "material-icon-theme",
+
 	// Color of Comments
 	"editor.tokenColorCustomizations": {
 		"comments": "#00a0eb"
@@ -25,45 +41,29 @@
 
 	// Make VSCode understand this files as files of this languages
 	"files.associations": {
+		".sequelizerc": "javascript",
 		".prettierignore": "ignore",
 		".lintstagedrc": "json",
 		".env.*": "env"
 	},
-	"material-icon-theme.languages.associations": {
-		"env": "tune"
-	},
 
 	// ======================= Formatters ===========================
 
+	// Disable prettier on files that conclict with eslint
 	"[javascript]": {
-		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		"editor.defaultFormatter": null
 	},
 	"[typescript]": {
-		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		"editor.defaultFormatter": null
 	},
 	"[javascriptreact]": {
-		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		"editor.defaultFormatter": null
 	},
 	"[typescriptreact]": {
-		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		"editor.defaultFormatter": null
 	},
 
 	// ================ Languages General Config ====================
-
-	// TypeScript
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"typescript.tsserver.log": "verbose",
-	"typescript.suggest.autoImports": true,
-	// JavaScript
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"javascript.suggest.autoImports": true,
-
-	// =========== Plugins & Extensions General Config ===============
-
-	// GitLens
-	"gitlens.codeLens.recentChange.enabled": false,
-	"gitlens.codeLens.authors.enabled": true,
-	"gitlens.codeLens.enabled": false,
 
 	// Eslint
 	"eslint.packageManager": "yarn",
@@ -81,7 +81,8 @@
 		"redux": "redux-actions",
 		"modules": "generator",
 		"entities": "class",
-		"migrations": "database"
+		"migrations": "database",
+		"@helpers": "utils"
 	},
 	"material-icon-theme.files.associations": {
 		"*.controller.ts": "nest-controller",
@@ -96,14 +97,15 @@
 		"*.interceptor.ts": "nest-guard",
 		"*.resolver.ts": "graphql",
 		"*.input.ts": "graphql",
-		"*.return.ts": "graphql",
-		"docker-compose.hmg.yml": "docker",
-		".env.hmg": "tune",
-		".env.docker": "tune"
+		"*.return.ts": "graphql"
+	},
+	"material-icon-theme.languages.associations": {
+		"env": "tune"
 	},
 
 	// TODO Tree
 	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 	"todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "[ ]"],
-	"todo-tree.tree.showScanModeButton": false
+	"todo-tree.tree.showScanModeButton": false,
+	"cSpell.words": ["nestjs", "techmmunity"]
 }

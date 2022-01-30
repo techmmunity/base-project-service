@@ -1,11 +1,5 @@
 {
 	"root": true,
-	"parser": "@typescript-eslint/parser",
-	"parserOptions": {
-		"project": "tsconfig.json",
-		"sourceType": "module"
-	},
-	"plugins": ["import-helpers"],
 	"extends": [
 		"@techmmunity/eslint-config/common",
 		"@techmmunity/eslint-config/typescript",

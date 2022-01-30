@@ -2,9 +2,9 @@ import { Module } from "@nestjs/common";
 
 import { API } from "./api";
 
-import { POSTGRES_CONNECT } from "v1/config/postgres";
+import { MongoDB } from "./config/mongodb";
 
 @Module({
-	imports: [POSTGRES_CONNECT, ...API],
+	imports: [MongoDB(), ...API],
 })
 export class V1Module {}

@@ -16,16 +16,16 @@ yarn docker
 ### How do I create a new migration?
 
 - Run `yarn docker` to update your local database
-- Code the new entity (Look to the *.entity.ts files for some examples) or make the changes in an already existent entity
+- Code the new entity (Look to the \*.entity.ts files for some examples) or make the changes in an already existent entity
 - In another terminal, run `yarn docker db` and keep it running
 - Run `yarn migration:generate <MIGRATION_NAME>`
 - Kill the "`yarn docker db`" terminal
 
 **WARNING:** Always check your migrations! Don't trust, verify!
 
-## Enviroment Variables
+## Environment Variables
 
-### How to add a new enviroment variable?
+### How to add a new environment variable?
 
 - Update the `src/types/env.d.ts` with the new variable (all variables must have the `string` type)
 - Add the new env var in to `.env.docker` file (env vars with sensitive content **MUST** have no value, just the key or an example non-real value)
@@ -70,5 +70,5 @@ yarn docker
 - Delete the `src/<API_VERSION>/api/<ENTITY_NAME>/<ENTITY_NAME>.service.spec.ts` file
 - Add `@ApiTag` decorator in the controller of the new entity
 - Change the base url of the controller of the new entity to contain the api version (ApiConfig.version)
-- Save the file of the controller of the new entity to prettier automatilly format the file
-- Save the file of the module of the new entity to prettier automatilly format the file
+- Save the file of the controller of the new entity to prettier automatically format the file
+- Save the file of the module of the new entity to prettier automatically format the file
